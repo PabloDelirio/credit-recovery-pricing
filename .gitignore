@@ -1,0 +1,30 @@
+# Ambiente virtual
+.venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Dados
+data/raw/*
+data/interim/*
+data/processed/*
+# Manter as pastas visiveis na estrutura do git
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Modelos treinados
+models/*
+!models/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Configs sensíveis, se um dia tiver (ex: API keys)
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
